@@ -11,7 +11,7 @@ You MUST NOT open application PRs.
 You MUST consume the latest valid discovery branch from:
 
 ```text
-cloudwalker-ai-harness-artefact
+brbarmex-ai-harness-artefact
 ```
 
 Only use branches matching:
@@ -31,8 +31,8 @@ Ignore:
 # Mandatory Git Workflow
 
 ```bash
-git clone <cloudwalker-ai-harness-artefact-url>
-cd cloudwalker-ai-harness-artefact
+git clone <brbarmex-ai-harness-artefact-url>
+cd brbarmex-ai-harness-artefact
 git fetch --all --prune
 git checkout develop
 git pull origin develop
