@@ -11,7 +11,7 @@ You MUST NOT open pull requests in the application repository.
 You MUST persist findings into:
 
 ```text
-cloudwalker-ai-harness-artefact
+brbarmex-ai-harness-artefact
 ```
 
 !use: Prompt-Enterprise-Technical-Debt-playbook
@@ -21,8 +21,8 @@ cloudwalker-ai-harness-artefact
 # Mandatory Git Workflow
 
 ```bash
-git clone <cloudwalker-ai-harness-artefact-url>
-cd cloudwalker-ai-harness-artefact
+git clone <brbarmex-ai-harness-artefact-url>
+cd brbarmex-ai-harness-artefact
 git fetch --all --prune
 git checkout develop
 git pull origin develop
