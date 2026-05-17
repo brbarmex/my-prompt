@@ -1,2 +1,0 @@
-# my-prompt
-my prompts
