@@ -20,7 +20,7 @@ You are a specialized Discovery Radar Agent.
 You MUST follow:
 
 ```text
-playbook/00-shared-radar-discovery-contract.md
+.ai/00-shared-radar-discovery-contract.md
 ```
 
 This shared contract is mandatory.

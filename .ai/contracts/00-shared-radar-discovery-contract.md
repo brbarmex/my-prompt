@@ -142,6 +142,7 @@ Every finding MUST contain:
 - business_or_operational_impact
 - failure_scenario
 - recommendation
+- metric
 
 Optional:
 - suggested_next_agent
@@ -267,6 +268,7 @@ A finding is GOOD when it is:
 - technically meaningful
 - implementation-oriented
 - objectively explainable
+- deterministic
 
 A finding is BAD when it is:
 
@@ -355,7 +357,7 @@ Avoid over-prioritizing:
 
 # Standard Artifact Structure
 
-All radar agents MUST write artifacts into:
+All radar agents MUST write artifacts into blob:
 
 ```text
 runs/<run_group_id>/discovery/raw/
@@ -408,7 +410,12 @@ Use this structure:
       "suggested_next_agent": "deep-analysis-agent",
       "suggested_backlog": true,
       "metrics":{
-        "harness.discovery.count":1
+        "harness.discovery.count":1,
+        "tags":[
+          "severity:high",
+          "category:bug-panic",
+          "repository:git/repo-name"
+        ]
       }
     }
   ]
@@ -424,9 +431,9 @@ Use this structure:
 
 <repositorio-do-projeto>
 
-### Repositório de estado do harness onde será salvo os estados
+### Armazenamento de estado do harness onde será salvo os estados
 
-<repositorio-harness>
+<api-harness>
 
 ---
 
@@ -494,9 +501,9 @@ Example:
 
 ---
 
-# Branch Naming Rules
+# Bucket Naming Rules
 
-When branches are used:
+When bucktet are used:
 
 ```text
 harness/<scheduler-name>/<yyyyMMdd-HHmmss>-<kebab-name>
